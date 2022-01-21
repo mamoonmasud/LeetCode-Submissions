@@ -1,0 +1,20 @@
+class Solution:
+    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+        n = len(gas)
+        if sum(gas) - sum(cost) <0:
+            return -1
+        
+        
+        gas_tank =0
+        start_index =0
+        for i in range(len(gas)):
+            gas_tank += gas[i] - cost[i]
+            print(gas_tank)
+            
+            if gas_tank <0:
+                start_index = i+1
+                gas_tank = 0
+                
+        return start_index
+
+        
