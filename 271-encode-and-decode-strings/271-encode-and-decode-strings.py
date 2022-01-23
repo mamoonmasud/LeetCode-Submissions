@@ -9,7 +9,6 @@ class Codec:
         """
         ans = []
         i = 0
-        print(s)
         while i <len(s):
             x1 = s.find("|", i)
             
