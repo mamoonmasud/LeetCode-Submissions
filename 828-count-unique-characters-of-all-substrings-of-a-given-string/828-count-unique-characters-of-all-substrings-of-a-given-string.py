@@ -6,7 +6,7 @@ class Solution:
             memo[char].append(idx)
             
         result = 0
-        
+        print(memo)
         for key, val in memo.items():
             for i, idx in enumerate(val):
                 if i-1 >=0:
@@ -20,6 +20,7 @@ class Solution:
                     right = len(s) - idx
                 
                 result += left*right
+
         return result
 #         if s is None:
 #             return 
