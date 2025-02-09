@@ -31,5 +31,5 @@
 <p><strong>Follow up:</strong> What if the inputs contain Unicode characters? How would you adapt your solution to such a case?</p>
 
 
-**Time Complexity:**         if s_count.keys() == t_count.keys():
-**Space Complexity:**             for key, value in s_count.items():
+**Time Complexity:** 11 ms
+**Space Complexity:** 17.95 mb
